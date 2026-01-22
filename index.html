@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BARSTARZZ SHOP | Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="video-background">
+    <div class="overlay"></div>
+    <video playsinline autoplay muted loop id="bgVideo">
+        <source src="video-fondo.mp4" type="video/mp4">
+    </video>
+</div>
+
+<header>
+    <div class="header-content">
+        <div class="brand-badge">BARSTARZZ ELITE</div>
+        <h1 class="header-title">BARSTARZZ SHOP</h1>
+        <p class="header-subtitle">EQUIPAMIENTO DE CALISTENIA PROFESIONAL</p>
+    </div>
+</header>
+
+<div class="quick-info">
+    <div class="moving-track">
+        <div class="info-box"><i class="fas fa-bolt"></i> <span>ALTO RENDIMIENTO</span></div>
+        <div class="info-box"><i class="fas fa-shield-alt"></i> <span>GARANTÍA TOTAL</span></div>
+        <div class="info-box"><i class="fas fa-shipping-fast"></i> <span>ENVÍOS A TODO PERÚ</span></div>
+        <div class="info-box"><i class="fas fa-bolt"></i> <span>ALTO RENDIMIENTO</span></div>
+        <div class="info-box"><i class="fas fa-shield-alt"></i> <span>GARANTÍA TOTAL</span></div>
+        <div class="info-box"><i class="fas fa-shipping-fast"></i> <span>ENVÍOS A TODO PERÚ</span></div>
+    </div>
+</div>
+
+<main class="main-content">
+    <div class="section-header">
+        <h2 class="section-label">CATÁLOGO BARSTARZZ</h2>
+    </div>
+    
+    <h3 class="category-title">EQUIPAMIENTO DE FUERZA</h3>
+    <div class="products-grid">
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['anillas.png', 'anillas_1.png', 'anillas_2.png', 'anillas_video.mp4'])">
+                <img src="anillas.png">
+            </div>
+            <div class="card-info">
+                <h3>Anillas Olímpicas</h3>
+                <div class="card-footer"><span class="price">S/ 80.00</span><button class="add-btn" onclick="addItem('Anillas Olímpicas', 80, 'anillas.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['paralelas.png', 'paralelas_1.png', 'paralelas_2.png', 'paralelas_video.mp4'])">
+                <img src="paralelas.png">
+            </div>
+            <div class="card-info">
+                <h3>Paralelas High-Grip</h3>
+                <div class="card-footer"><span class="price">S/ 85.00</span><button class="add-btn" onclick="addItem('Paralelas High-Grip', 85, 'paralelas.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['mancuernas.png', 'mancuernas_1.png', 'mancuernas_2.png', 'mancuernas_video.mp4'])">
+                <img src="mancuernas.png">
+            </div>
+            <div class="card-info">
+                <h3>Barras Mancuernas</h3>
+                <div class="card-footer"><span class="price">S/ 100.00</span><button class="add-btn" onclick="addItem('Barras Mancuernas', 100, 'mancuernas.png')">+</button></div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">CORE Y SOPORTE</h3>
+    <div class="products-grid">
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['rodillo.png', 'rodillo_1.png', 'rodillo_2.png', 'rodillo_video.mp4'])">
+                <img src="rodillo.png">
+            </div>
+            <div class="card-info">
+                <h3>Rodillo Core-Pro</h3>
+                <div class="card-footer"><span class="price">S/ 59.90</span><button class="add-btn" onclick="addItem('Rodillo Core-Pro', 59.90, 'rodillo.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['cinturon.png', 'cinturon_1.png', 'cinturon_2.png', 'cinturon_video.mp4'])">
+                <img src="cinturon.png">
+            </div>
+            <div class="card-info">
+                <h3>Cinturón Abdominal</h3>
+                <div class="card-footer"><span class="price">S/ 50.00</span><button class="add-btn" onclick="addItem('Cinturón Abdominal', 50, 'cinturon.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['tobillos.png', 'tobillos_1.png', 'tobillos_2.png', 'tobillos_video.mp4'])">
+                <img src="tobillos.png">
+            </div>
+            <div class="card-info">
+                <h3>Correas Tobilleras</h3>
+                <div class="card-footer"><span class="price">S/ 35.00</span><button class="add-btn" onclick="addItem('Correas Tobilleras', 35, 'tobillos.png')">+</button></div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="category-title">ACCESORIOS PRO</h3>
+    <div class="products-grid">
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['magnesia.png', 'magnesia_1.png', 'magnesia_2.png', 'magnesia_video.mp4'])">
+                <img src="magnesia.png">
+            </div>
+            <div class="card-info">
+                <h3>Magnesio Pro</h3>
+                <div class="card-footer"><span class="price">S/ 35.00</span><button class="add-btn" onclick="addItem('Magnesio Pro', 35, 'magnesia.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['guantes.png', 'guantes_1.png', 'guantes_2.png', 'guantes_video.mp4'])">
+                <img src="guantes.png">
+            </div>
+            <div class="card-info">
+                <h3>Guantes Fitness</h3>
+                <div class="card-footer"><span class="price">S/ 55.00</span><button class="add-btn" onclick="addItem('Guantes Fitness', 55, 'guantes.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['bandas-anti.png', 'bandas-anti_1.png', 'bandas-anti_2.png', 'bandas-anti_video.mp4'])">
+                <img src="bandas-anti.png">
+            </div>
+            <div class="card-info">
+                <h3>Banda Antideslizante</h3>
+                <div class="card-footer"><span class="price">S/ 39.90</span><button class="add-btn" onclick="addItem('Banda Tela', 39.90, 'bandas-anti.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['brazaletes.png', 'brazaletes_1.png', 'brazaletes_2.png', 'brazaletes_video.mp4'])">
+                <img src="brazaletes.png">
+            </div>
+            <div class="card-info">
+                <h3>Brazaletes Fitness</h3>
+                <div class="card-footer"><span class="price">S/ 25.00</span><button class="add-btn" onclick="addItem('Brazaletes', 25, 'brazaletes.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['shaker.png', 'shaker_1.png', 'shaker_2.png', 'shaker_video.mp4'])">
+                <img src="shaker.png">
+            </div>
+            <div class="card-info">
+                <h3>Vaso Shaker Pro</h3>
+                <div class="card-footer"><span class="price">S/ 30.00</span><button class="add-btn" onclick="addItem('Vaso Shaker', 30, 'shaker.png')">+</button></div>
+            </div>
+        </div>
+        <div class="modern-card">
+            <div class="card-img" onclick="openLightbox(['bandas.png', 'bandas_1.png', 'bandas_2.png', 'bandas_video.mp4'])">
+                <img src="bandas.png">
+            </div>
+            <div class="card-info">
+                <h3>Bandas Resistencia</h3>
+                <div class="card-footer"><span class="price">S/ 79.90</span><button class="add-btn" onclick="addItem('Bandas Latex', 79.90, 'bandas.png')">+</button></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="cart-panel" id="cart-panel">
+    <div class="cart-inner">
+        <div class="cart-header">
+            <h3>TU PEDIDO</h3>
+            <div style="display:flex; gap:10px; align-items:center;">
+                <button onclick="clearCart()" class="btn-vaciar">VACIAR</button>
+                <button onclick="toggleCart()" class="btn-close-cart">✕</button>
+            </div>
+        </div>
+        <div id="cart-items" class="items-list"></div>
+        <div class="cart-footer">
+            <div class="total-box"><span>TOTAL:</span><span id="cart-total">S/ 0.00</span></div>
+            <div class="payment-methods">
+                <p>PAGOS POR YAPE O PLIN:</p>
+                <div class="pay-icons-row">
+                    <img src="Yape.png" alt="Yape" class="pay-img">
+                    <img src="Plin.png" alt="Plin" class="pay-img">
+                </div>
+            </div>
+            <div class="order-form">
+                <div class="input-container"><i class="fas fa-user"></i><input type="text" id="order-name" placeholder="Nombre completo"></div>
+                <div class="input-container"><i class="fas fa-id-card"></i><input type="number" id="order-dni" placeholder="DNI"></div>
+                <div class="input-row" style="display:flex; gap:10px;">
+                    <div class="input-container" style="flex:1"><i class="fas fa-map-marker-alt"></i><input type="text" id="order-prov" placeholder="Provincia"></div>
+                    <div class="input-container" style="flex:1"><i class="fas fa-location-arrow"></i><input type="text" id="order-dist" placeholder="Distrito"></div>
+                </div>
+            </div>
+            <button class="btn-whatsapp-send" onclick="sendOrder()"><i class="fab fa-whatsapp"></i> ENVIAR PEDIDO</button>
+        </div>
+    </div>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+    <button class="nav-btn prev" onclick="changeImg(-1, event)">&#10094;</button>
+    <div id="lightbox-content" onclick="event.stopPropagation()"></div>
+    <button class="nav-btn next" onclick="changeImg(1, event)">&#10095;</button>
+</div>
+
+<a href="https://wa.me/51991684812?text=Hola%20Barstarzz!" class="wa-float-query" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="query-text">¿Dudas? Escríbenos</span>
+</a>
+
+<button class="float-cart" onclick="toggleCart()">
+    <i class="fas fa-shopping-bag"></i>
+    <span id="count" class="badge">0</span>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
