@@ -1,0 +1,69 @@
+/* VIDEO FONDO */
+.video-background { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -10; overflow: hidden; }
+.video-background video { min-width: 100%; min-height: 100%; object-fit: cover; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: -9; }
+
+:root { --gold: #d4af37; --black: #000; --white: #d9d9da; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+body { background: transparent; color: var(--white); overflow-x: hidden; }
+
+/* HEADER SIN LOGO */
+header { height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.brand-badge { border: 1px solid var(--gold); padding: 5px 20px; color: var(--gold); font-size: 0.8rem; letter-spacing: 5px; margin-bottom: 20px; display: inline-block; font-weight: 900; }
+.header-title { font-size: clamp(2.5rem, 10vw, 5.5rem); font-weight: 900; letter-spacing: -2px; }
+.header-subtitle { color: var(--gold); font-weight: 700; letter-spacing: 3px; font-size: 0.9rem; }
+
+/* MARQUESINA */
+.quick-info { background: var(--black); padding: 15px 0; overflow: hidden; border-bottom: 2px solid var(--gold); }
+.moving-track { display: flex; width: max-content; animation: scrollInfo 20s linear infinite; }
+.info-box { color: var(--white); font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; gap: 10px; padding: 0 50px; }
+.info-box i { color: var(--gold); }
+@keyframes scrollInfo { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* GRILLA PRODUCTOS */
+.main-content { max-width: 1400px; margin: 0 auto; padding: 40px 20px; }
+.category-title { background: var(--black); color: var(--gold); padding: 15px; margin: 40px 0 20px; border-radius: 10px; font-weight: 900; border-left: 5px solid var(--gold); }
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.modern-card { background: var(--white); border-radius: 20px; padding: 20px; border: 1px solid rgba(212,175,55,0.2); transition: 0.3s; }
+.card-img { height: 260px; background: #fdfdfd; border-radius: 15px; display: flex; align-items: center; justify-content: center; overflow: hidden; cursor: pointer; }
+.card-img img { max-width: 90%; max-height: 90%; object-fit: contain; }
+.card-info h3 { font-size: 1.2rem; margin: 20px 0 15px; color: var(--black); font-weight: 900; }
+.card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 15px; }
+.price { font-size: 1.6rem; font-weight: 900; color: var(--black); }
+.add-btn { background: var(--gold); border: none; width: 50px; height: 50px; border-radius: 15px; font-size: 1.8rem; font-weight: 900; cursor: pointer; color: #000; }
+
+/* LIGHTBOX ARREGLADO (PARA QUE SE VEA BIEN) */
+.lightbox { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); align-items: center; justify-content: center; }
+#lightbox-content { max-width: 90%; max-height: 80vh; display: flex; align-items: center; justify-content: center; }
+#lightbox-content img, #lightbox-content video { max-width: 100%; max-height: 80vh; border-radius: 10px; }
+.close-lightbox { position: absolute; top: 20px; right: 30px; color: #fff; font-size: 50px; cursor: pointer; z-index: 10000; }
+.nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(212,175,55,0.5); color: white; border: none; padding: 20px; cursor: pointer; border-radius: 5px; font-size: 20px; }
+.prev { left: 10px; } .next { right: 10px; }
+
+/* CARRITO AJUSTADO */
+.cart-panel { position: fixed; right: -100%; top: 0; width: 100%; max-width: 480px; height: 100%; background: var(--white); z-index: 2000; transition: 0.5s; box-shadow: -10px 0 30px rgba(0,0,0,0.5); }
+.cart-panel.open { right: 0; }
+.cart-inner { display: flex; flex-direction: column; height: 100%; }
+.cart-header { background: var(--black); color: var(--gold); padding: 25px; display: flex; justify-content: space-between; align-items: center; }
+.items-list { flex: 1; overflow-y: auto; padding: 25px; color: #000; }
+.cart-footer { padding: 25px; background: #f9f9f9; border-top: 1px solid #eee; }
+.total-box { display: flex; justify-content: space-between; background: var(--black); color: var(--gold); padding: 20px; border-radius: 12px; font-weight: 900; margin-bottom: 20px; }
+
+/* FORMULARIO */
+.input-container { position: relative; margin-bottom: 12px; }
+.input-container i { position: absolute; left: 15px; top: 15px; color: #888; }
+.input-container input { width: 100%; padding: 15px 15px 15px 45px; border-radius: 10px; border: 1px solid #ddd; color: #000; }
+.pay-img { height: 40px; margin-right: 10px; }
+.btn-whatsapp-send { background: #25d366; color: #fff; border: none; padding: 18px; border-radius: 12px; font-weight: 900; width: 100%; cursor: pointer; font-size: 1.1rem; }
+
+/* FLOTANTES */
+.wa-float-query { position: fixed; bottom: 110px; right: 25px; background: #25d366; color: #fff; padding: 15px 25px; border-radius: 40px; text-decoration: none; font-weight: 900; z-index: 1000; }
+.float-cart { position: fixed; bottom: 25px; right: 25px; width: 70px; height: 70px; background: var(--black); color: var(--gold); border: 2px solid var(--gold); border-radius: 50%; z-index: 1000; cursor: pointer; font-size: 1.5rem; }
+.badge { position: absolute; top: -5px; right: -5px; background: #ff3b30; color: #fff; padding: 5px 10px; border-radius: 50%; font-size: 0.8rem; }
+
+@media (max-width: 768px) {
+    .products-grid { grid-template-columns: 1fr 1fr; gap: 15px; }
+    .card-img { height: 180px; }
+    .cart-panel { max-width: 100%; }
+    .query-text { display: none; }
+}
